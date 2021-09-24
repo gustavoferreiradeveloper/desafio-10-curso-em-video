@@ -60,7 +60,7 @@ header p {
   font-family: var(--fonte-padrao);
   font-size: 1.2em;
   font-style: normal;
-  text-shadow: 0em 0.1em 0px #33333328;
+  text-shadow: 2px 2px 0px #00000045;
 }
 
 nav ul {
@@ -80,6 +80,7 @@ nav ul li {
 nav a {
   color: var(--cor7);
   transition: 0.5s;
+  border-radius: 5px;
 }
 
 nav a:hover {
@@ -120,6 +121,7 @@ article h2 {
   font-size: 2em;
   margin: 20px 0 20px 20px;
   font-weight: normal;
+  padding-left: 10px;
 }
 
 article p {
@@ -205,12 +207,24 @@ aside abbr {
   text-decoration: underline;
 }
 
-footer p {
+footer {
   background-color: var(--cor4);
   text-align: center;
   padding: 10px;
   margin-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+footer cite {
+  font-size: 0.8em;
+}
+
+footer p {
+  font-style: italic;
+}
+
+footer p a {
   font-style: italic;
 }
 
@@ -222,16 +236,17 @@ footer a:hover {
   color: var(--cor2);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   /* RESPONSIVIDADE PARA TABLETS */
 
   nav ul {
     align-items: center;
     padding-top: 20px;
   }
-  
-  main{
-    width:100%;
+
+  main {
+    width: 100%;
+  }
 }
 
 @media (max-width: 425px) {
@@ -271,6 +286,7 @@ footer a:hover {
 
   .bug {
     height: 200px;
+    transition: 0.5s;
     width: 350px;
   }
 
