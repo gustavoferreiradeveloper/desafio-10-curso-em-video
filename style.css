@@ -78,7 +78,7 @@ nav ul li {
 }
 
 nav a {
-  color: var(--cor7);
+  color: var(--cor1);
   transition: 0.5s;
   border-radius: 5px;
 }
@@ -143,6 +143,10 @@ a {
   text-decoration: none;
 }
 
+a.externo::after {
+  content: "\00A0\1F517";
+}
+
 a:hover {
   color: var(--cor2);
 }
@@ -177,8 +181,8 @@ aside {
 
 aside h3 {
   height: 40px;
-  padding: 10px 0 0 10px;
-  background-color: var(--cor3);
+  padding: 10px;
+  background-color: var(--cor4);
   color: var(--cor7);
   border-radius: 10px 10px 0 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -189,22 +193,21 @@ aside p {
 }
 
 aside ul {
-  list-style-type: "✓";
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2em;
-  height: 180px;
-  padding-left: 25px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: center;
+  list-style-type: "\2714\00A0\00A0";
+  list-style-position: inside;
+  columns: 2;
+  margin-top: 10px;
+  padding-left: 10px;
 }
 
 aside abbr {
   color: var(--cor6);
   text-decoration: underline;
+  line-height: 10px;
+}
+
+aside a:hover {
+  color: var(--cor7);
 }
 
 footer {
